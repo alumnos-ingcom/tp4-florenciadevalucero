@@ -1,3 +1,8 @@
+# Lucero D'eva Florencia - @florenciadevalucero
+# Plantilla de ejercicio
+# UNRN Andina - Introducción a la Ingenieria en Computación
+################
+
 def suma_lenta(numero, otro_numero):
     limite = otro_numero
     limite = (limite * -1)

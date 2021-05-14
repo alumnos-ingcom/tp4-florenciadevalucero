@@ -1,3 +1,8 @@
+# Lucero D'eva Florencia - @florenciadevalucero
+# Plantilla de ejercicio
+# UNRN Andina - Introducción a la Ingenieria en Computación
+################
+
 class IngresoIncorrecto(Exception):
     """Esta es la Excepcion para el ingreso incorrecto"""
     
