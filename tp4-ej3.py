@@ -13,7 +13,8 @@ def convertir_a_fahrrenheit(centigrados):
 def convertir_a_centigrados(fahrenheit):
     try:
         fahrenheit= float(fahrenheit)
-        conversion = (fahrenheit - 32) * 9/5
+        conversion = (fahrenheit - 32) / (9/5)
+        conversion = round(conversion, 2)
         print(f"La conversion de {fahrenheit}° grados fahrenheit son {conversion} °grados Centigrados") 
        
     except ValueError as err:
