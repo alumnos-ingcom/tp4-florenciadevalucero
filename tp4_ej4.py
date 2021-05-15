@@ -3,11 +3,8 @@
 # UNRN Andina - Introducción a la Ingenieria en Computación
 ################
 
-# Escribir una función que reciba dos valores y retorne:
-# Retornar -1 si el primero es menor que el segundo
-# Retornar 0 si son iguales
-# Retornar 1 si el primero es mayor que el segundo
-
+#Escribir una función que reciba un número e indique
+#si el mismo es positivo, negativo o cero.
 import tp4_ej1 as soporte
 
 def compara(numero, otro_numero):

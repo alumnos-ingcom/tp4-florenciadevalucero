@@ -3,6 +3,12 @@
 # UNRN Andina - Introducción a la Ingenieria en Computación
 ################
 
+#Escribir una función que reciba dos valores y retorne:
+
+# Retornar -1 si el primero es menor que el segundo
+# Retornar 0 si son iguales
+# Retornar 1 si el primero es mayor que el segundo
+
 import tp4_ej1 as soporte
 
 def signo(numero):
