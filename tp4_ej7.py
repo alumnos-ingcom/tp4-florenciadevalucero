@@ -6,12 +6,12 @@
 #Escribir una función que mediante restas sucesivas,
 # obtenga el valor del cociente y resto de dos números enteros.
 
-from tp4_ej1 import  ingreso_entero
+from tp4_ej1 import  ingreso_entero, IngresoIncorrecto
 def division_lenta(dividendo, divisor):
     cociente = 0
     
     if divisor == 0:
-        print("No esta definida la división por 0")
+        raise IngresoIncorrecto("No esta determinada la division por cero")
 
         while dividendo >= divisor:
             dividendo =dividendo - divisor
