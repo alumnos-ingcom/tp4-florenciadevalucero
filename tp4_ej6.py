@@ -6,7 +6,7 @@
 # retorne el menor ellos. E implementar otra función que retorne el valor
 # máximo del conjunto de valores.
 
-import tp4_ej1 as soporte
+from tp4_ej1 import  ingreso_entero
 
 def minimo(lista):
     min = 999999
@@ -30,7 +30,7 @@ def maximo(lista):
     
 
 def prueba():
-    cantidad_elementos = soporte.ingreso_entero("¿Cuántos elementos tendrá su lista: ")
+    cantidad_elementos = ingreso_entero("¿Cuántos elementos tendrá su lista: ")
     
     if cantidad_elementos <= 0:
         print("Su lista no puede tener menor o iguales a cero elementos")
@@ -39,7 +39,7 @@ def prueba():
     
     #Añadimos los elementos a la lista
     for i in range(cantidad_elementos):
-        elemento = soporte.ingreso_entero(f"Ingrese el elemento {i+1} de la lista: ")
+        elemento = ingreso_entero(f"Ingrese el elemento {i+1} de la lista: ")
         mi_lista.append(elemento)
       
     numero_minimo = minimo(mi_lista)

@@ -9,7 +9,7 @@
 # Retornar 0 si son iguales
 # Retornar 1 si el primero es mayor que el segundo
 
-import tp4_ej1 as soporte
+from tp4_ej1 import  ingreso_entero
 
 def signo(numero):
     if numero > 0:
@@ -20,7 +20,7 @@ def signo(numero):
         print(f"El numero {numero} es negativo")
 
 def prueba():
-    numero = soporte.ingreso_entero("Ingrese un numero: ")
+    numero = ingreso_entero("Ingrese un numero: ")
     signo(numero)
 
 if __name__ == "__main__":
