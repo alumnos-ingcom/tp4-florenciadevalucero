@@ -20,7 +20,7 @@ def es_primo(numero):
 def prueba():
     numero = ingreso_entero("Ingrese un numero para verificar si es primo o no: ")
     verificar = es_primo(numero)
-    if verificar == True:
+    if verificar :
         print(f"El numero {numero} es primo")
     else:
         print(f"El numero {numero} no es primo")
