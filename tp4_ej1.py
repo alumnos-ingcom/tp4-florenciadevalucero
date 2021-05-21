@@ -31,15 +31,15 @@ def ingreso_entero_reintento(mensaje, cantidad_reintentos=5):
                 raise IngresoIncorrecto("No era un número!") from err
         
 
-def ingreso_entero_restringido(mensaje,valor_minimo=0, valor_maximo=10):
+def ingreso_entero_restringido(mensaje,valor_minimo, valor_maximo):
     print(f"{mensaje} {valor_minimo} y {valor_maximo}: ")
     ingreso =input("# ")
     try:
         entero = int(ingreso)
         if entero < valor_minimo or entero > valor_maximo:
-            print(f"El numero {ingreso} no es un numero que este entre 0 y 10")
+            print(f"El numero {ingreso} no es un numero que este entre {valor_minimo} y {valor_maximo}")
         else:
-            print(f"El numero esta entre 0 y 10")
+            print(f"El numero esta entre {valor_minimo} y {valor_maximo}")
             return entero
     except ValueError:
         print("No era un número! Vuelva a intentarlo.")
@@ -51,9 +51,10 @@ def prueba():
     print("\nSegunda funcion")
     reintento = ingreso_entero_reintento("Bienvenido, digite un número entero: ", cantidad_reintentos=5)
     print("\nTercera funcion")
-    restringido = ingreso_entero_restringido("Ingrese un numero que este entre: ")
-    
-
+    mensaje = ("\nIngrese un numero que este entre: ")
+    valor_minimo= int(input("\nIngrese el valor que desea que sea el minimo: "))
+    valor_maximo= int(input("\nIngrese el valor que desea que sea el máximo: "))
+    ingreso_entero_restringido(mensaje, valor_minimo, valor_maximo)
 
 if __name__ == "__main__":
     prueba()
