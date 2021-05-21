@@ -11,21 +11,18 @@ from tp4_ej1 import  ingreso_entero
 def minimo(lista):
     min = 999999
     
-    largo =len(lista) #Guardamos el numero de elementos que tiene la lista
-    for i in range(largo):
-        if lista[i] < min:
-            min = lista[i]
+    for item in lista :
+        if item < min:
+            min = item
     return min
     
     
 def maximo(lista):
     maxi = -999999
     
-    largo =len(lista)
-    #Recorremos la lista comparando que numero es el mayor
-    for i in range(largo):
-        if lista[i] > maxi:
-            maxi = lista[i]
+    for item in lista:
+        if item > maxi:
+            maxi = item
     return maxi
     
 
