@@ -11,7 +11,7 @@ def division_lenta(dividendo, divisor):
     cociente = 0
     
     if divisor == 0:
-        raise IngresoIncorrecto("No esta determinada la division por cero")
+        raise ZeroDivisionError("No esta determinada la division por cero")
 
         while dividendo >= divisor:
             dividendo =dividendo - divisor
