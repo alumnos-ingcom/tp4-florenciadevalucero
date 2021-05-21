@@ -20,7 +20,7 @@ def ordenar_mayor_a_menor(uno, dos, tres):
     numero_del_medio = suma - (mayor + menor)
     
     tupla = [mayor, numero_del_medio, menor]
-    print("Orden decreciente: ", tupla)
+    return tupla
     
     
     
@@ -32,7 +32,7 @@ def ordenar_menor_a_mayor(uno, dos, tres):
     numero_del_medio = suma - (mayor + menor)
     
     tupla = [menor, numero_del_medio, mayor]
-    print(f"Orden creciente: ", tupla)
+    return tupla
 
 
 
@@ -41,8 +41,13 @@ def prueba():
     uno = ingreso_entero("Ingrese un numero para ordenar: ")
     dos = ingreso_entero("Ingrese otro numero para ordenar: ")
     tres = ingreso_entero("Ingrese otro numero para ordenar: ")
-    ordenar_mayor_a_menor(uno, dos, tres)
-    ordenar_menor_a_mayor(uno, dos, tres)
+    tupla_decreciente = ordenar_mayor_a_menor(uno, dos, tres)
+    print("Orden decreciente: ")
+    print(tupla_decreciente)
+    tupla_creciente = ordenar_menor_a_mayor(uno, dos, tres)
+    print("Orden creciente: ")
+    print(tupla_creciente)
+    
     
     
    
