@@ -19,7 +19,7 @@ def ordenar_mayor_a_menor(uno, dos, tres):
     suma = uno + dos + tres
     numero_del_medio = suma - (mayor + menor)
     
-    tupla = [mayor, numero_del_medio, menor]
+    tupla = (mayor, numero_del_medio, menor)
     return tupla
     
     
@@ -31,7 +31,7 @@ def ordenar_menor_a_mayor(uno, dos, tres):
     suma = uno + dos + tres
     numero_del_medio = suma - (mayor + menor)
     
-    tupla = [menor, numero_del_medio, mayor]
+    tupla = (menor, numero_del_medio, mayor)
     return tupla
 
 
